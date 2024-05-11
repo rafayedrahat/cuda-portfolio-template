@@ -1,0 +1,899 @@
+/*==============================================================
+        Template Name: CUDA - AN AWESOME Portfolio Template
+        Template URI: 
+        Description: An awesome Portfolio Template
+        Author: Rahat Hossain
+        Authr URI: rahathossain.me (link will not be work)
+        Support: support@rahathossain.com (mail will not be work)
+        Version: 1.0
+==============================================================*/
+
+/*==============================================================
+        CSS INDEX
+        =========
+
+        1. COMMON CSS
+        2. HEADER SECTION CSS
+        3. SERVICE SECTION CSS
+        4. OUR TEAM SECTION CSS
+        5. SKILL SECTION CSS
+        6. PORTFOLIO SECTION CSS
+        7. TESTIMONIAL SECTION CSS
+        8. CONTACT SECTION CSS
+        9. FOOTER SECTION CSS
+==============================================================*/
+
+/*==============================================================
+
+        1. COMMON CSS
+
+==============================================================*/
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 10px;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+ul li {
+        list-style: none;
+}
+
+/*==============================================================*/
+/*=====================REUSABLE COMPONENTS======================*/
+/*==============================================================*/
+.row {
+        max-width: 1180px;
+        margin: auto;
+}
+
+section {
+        padding: 120px 0;
+        text-align: center;
+}
+
+a:link,
+a:visited,
+a {
+        color: #fff;
+        text-decoration: none;
+}
+
+.btn:visited,
+.btn:link,
+.btn {
+        background-color: black;
+        color: #fff;
+        padding: 15px 60px;
+        font-size: 180%;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-bottom: 3px solid #312f2f;
+        border-radius: 5px;
+        display: inline-block;
+        cursor: pointer;
+}
+
+/*================== STYLING OF HEADINGS ==================*/
+
+h2.section-title {
+        font-family: "Titillium Web", sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 400%;
+        font-weight: 600;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+}
+
+h2.section-title::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        margin: 0 auto;
+        margin-top: 10px;
+        border-radius: 3px;
+        background-color: #fff;
+}
+
+h3 {
+        font-family: "Titillium Web", sans-serif;
+        text-transform: uppercase;
+        font-size: 240%;
+        font-weight: 600;
+}
+
+p.section-description {
+	font-size: 180%;
+	font-weight: 400;
+	width: 50%;
+	margin: 0 auto;
+        margin-bottom: 120px;
+}
+
+/*==============================================================
+
+        2. HEADER SECTION CSS
+
+==============================================================*/
+#header {
+        background: linear-gradient(rgba(135, 80, 156, 0.9), rgba(135, 80, 156, 0.9)), url('img/hero-bg.jpg') no-repeat fixed center / cover;
+        height: 90vh;
+        position: relative;
+}
+
+/*==============================================================*/
+/*=====================NAVIGATION BAR CSS=======================*/
+/*==============================================================*/
+.nav-bar {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 50px;
+	max-width: 1180px;
+	margin: 0 auto;
+        position: relative;
+}
+
+.nav-bar img {
+        height: 35px;
+        width: auto;
+}
+
+.main-menu ul {
+        margin-top: 5px;
+}
+
+.main-menu ul li {
+        display: inline-block;
+        margin-left: 5px;
+}
+
+.main-menu ul li:first-child {
+        margin-left: 0;
+}
+
+.main-menu ul li a {
+        font-size: 160%;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 5px 15px;
+        border-radius: 3px;
+        display: inline-block;
+        transition: .3s;
+}
+
+.main-menu ul li.active {
+        background: #643a79;
+        border-radius: 3px;
+}
+
+.main-menu ul li:hover a {
+        background-color: #643a79;
+}
+
+nav.uk-sticky-fixed {
+        background-color: rgba(0, 0, 0, 0.9);
+        box-shadow: 0 2px 5px #fff;
+}
+
+nav.uk-sticky-fixed .nav-bar {
+        padding-top: 10px;
+}
+
+nav.uk-sticky-fixed .logo {
+        height: 30px;
+        margin-top: 5px;
+}
+
+nav.uk-sticky-fixed .main-menu {
+        margin-top: 10px;
+}
+
+/* HAMBERGAR NAVIGATION */
+
+.nav-bar .hambergar-menu {
+        display: none;
+}
+
+.hambergar-menu i.fa-bars,
+.hambergar-menu-items i.fa-xmark {
+        font-size: 300%;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 5px;
+        cursor: pointer;
+}
+
+.hambergar-menu-items i.fa-xmark {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        padding: 5px 7px;
+        background-color: #000000;
+
+}
+
+.hambergar-menu-items {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.97);
+        overflow: hidden;
+}
+
+.hambergar-menu-links {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+.hambergar-menu-items a {
+        font-size: 300%;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-weight: 600;
+        transition: .3s;
+}
+
+.hambergar-menu-items a:hover {
+        color: rgb(247, 46, 19);
+        font-size: 350%;
+}
+
+/*==============================================================*/
+/*========================HERO TEXT BOX=========================*/
+/*==============================================================*/
+
+.hero-text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+}
+
+.hero-text-box h1 {
+        font-family: "Titillium Web", sans-serif;
+        font-size: 420%;
+        color: #fff;
+}
+
+.hero-text-box .hero-btn {
+        background-color: #eb7d4b;
+        border-color: #c86a40;
+        margin-top: 60px;
+}
+
+/*==============================================================
+
+        3. SERVICE SECTION CSS
+
+==============================================================*/
+
+#service {
+        background: linear-gradient(rgba(23, 194, 163, 0.9), rgba(23, 194, 163, 0.9)), url(img/services-bg.jpg) no-repeat center top / cover;
+        color: #fff;
+}
+
+#service .section-title::after {
+        background-color: #14a58c;
+}
+
+#service .section-description {
+        margin-bottom: 110px;
+}
+
+.service-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+}
+
+.service-items {
+	padding: 0 40px;
+}
+
+.service-items img {
+        height: 100px;
+        margin-bottom: 40px;
+}
+
+.service-items h3 {
+        color: #fff;
+        margin-bottom: 20px;
+}
+
+.service-items p {
+        font-size: 160%;
+        font-weight: 300;
+}
+
+/*==============================================================
+
+        4. OUR TEAM SECTION CSS
+
+==============================================================*/
+
+#our-team {
+        background: linear-gradient(rgba(231, 241, 248, 0.8), rgba(231, 241, 248, 0.8)), url(img/team-bg.jpg) no-repeat fixed center / cover;
+}
+
+#our-team .section-title::after {
+        background-color: #c8d9e5;
+}
+
+#our-team .section-title {
+        color: #3c4761;
+}
+
+#our-team .section-description {
+        color: #535e75;
+        width: 60%;
+}
+
+.team-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+}
+
+.team-items img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin-bottom: 35px;
+}
+
+.team-items h3 {
+        color: #27283d;
+        margin-bottom: 5px;
+}
+
+.team-items .team-member-designation {
+        font-size: 160%;
+        color: #30bae7;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        display: inline-block;
+}
+
+.team-items .team-member-description {
+        font-size: 160%;
+        width: 70%;
+        margin: 0 auto;
+        color: #3c4761;
+        font-weight: 300;
+        margin-bottom: 45px;
+}
+
+.team-items .social-media-icons ul li {
+        display: inline-block;
+        margin: 0 5px;
+}
+
+.team-items .social-media-icons ul li a i::before {
+        display: inline-block;
+        font-size: 200%;
+        background-color: #bdd1df;
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        transition: .5s;
+}
+
+.team-items .social-media-icons ul li:hover a i::before {
+        transform: rotate(360deg);
+        background: #000;
+}
+
+/*==============================================================
+
+        5. SKILL SECTION CSS
+
+==============================================================*/
+
+#skill {
+        background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255,255,255,.9)), url(img/skill-bg.jpg) no-repeat center top / cover;
+}
+
+#skill .section-title {
+        color: #3c4761;
+}
+#skill .section-title::after {
+        background-color: #dfe8ed;
+}
+
+#skill .section-description {
+        color: #3c4761;
+}
+
+.skill-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+}
+
+.skill-items h3 {
+        margin-top: 20px;
+}
+
+/* PROGRESSBAR RADIAL CSS'S IS IN PROGRESSBAR.CSS (vendors/css/progressbar.css) */
+/* PROGRESSBAR RADIAL script file IS IN PROGRESSBAR.js (vendors/js/progressbar.js) */
+
+/*==============================================================
+
+        6. PORTFOLIO SECTION CSS
+
+==============================================================*/
+
+#portfolio {
+        background: linear-gradient(rgba(255, 221, 153, 0.7), rgba(255, 221, 153, 0.7)), url(img/portfolio-bg.jpg) no-repeat fixed center / cover;
+        height: 1150px;
+}
+
+#portfolio .section-title {
+        color: #3c4761;
+}
+#portfolio .section-title::after {
+        background-color: #e5c37f;
+}
+
+#portfolio .section-description {
+        color: #3c4761;
+        margin-bottom: 50px;
+}
+
+.portfolio-btn button {
+        border: none;
+        color: #3c4761;
+        text-transform: uppercase;
+        font-size: 180%;
+        font-weight: 600;
+        background-color: #ebc985;
+        margin: 0 5px;
+        padding: 8px 35px;
+        border-radius: 3px;
+        transition: .3s;
+}
+
+.portfolio-btn button:hover {
+        box-shadow: inset 0 3px 5px rgba(60, 71, 97, .5);
+}
+
+.mixitup-control-active {
+        background: #fff!important;
+}
+
+.portfolio-container {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 35px;
+}
+
+.portfolio-items img {
+        height: 280px;
+        width: auto;
+        display: inline-block;
+}
+
+.portfolio-items span {
+        display: block;
+        color: #3c4761;
+        font-size: 180%;
+        margin-top: 15px;
+        text-transform: uppercase;
+}
+
+/*==============================================================
+
+        7. TESTIMONIAL SECTION CSS
+
+==============================================================*/
+
+#testimonial {
+        background: linear-gradient(rgba(215, 70, 128, 0.8), rgba(215, 70, 128, 0.8)), url(img/testimonial-bg.jpg) no-repeat center / cover;
+}
+
+#testimonial .section-title {
+        color: #fff;
+}
+
+#testimonial .section-title::after {
+        background-color: #b73c6d;
+}
+
+#testimonial .section-description {
+        color: #fff;
+}
+
+.testimonial-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 100px 50px;
+        text-align: left;
+}
+
+.testimonial-items img {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        float: left;
+        margin: 24px 50px 50px 0
+}
+
+.testimonial-items p {
+        font-size: 200%;
+        font-style: italic;
+        color: #fff;
+}
+
+.testimonial-items h3 {
+        margin-top: 30px;
+        color: #fff;
+}
+
+.testimonial-items span {
+        color: #ffdd99;
+        font-size: 180%;
+}
+
+/*==============================================================
+
+        8. CONTACT SECTION CSS
+
+==============================================================*/
+
+#contact {
+        background: linear-gradient(rgba(60, 83, 153, 0.918), rgba(60, 83, 153, 0.918)), url(img/contact-bg.jpg) no-repeat center / cover fixed;
+        color: #fff;
+}
+
+#contact .section-title::after {
+        background-color: #273a71;
+}
+
+#contact .section-description {
+        width: 80%;
+        margin-bottom: 90px;
+}
+
+.contact-form {
+        width: 80%;
+        margin: 0 auto;
+}
+
+.contact-form input[type="text"]{
+        float: left;
+        width: 48%;
+        padding: 20px;
+        font-size: 160%;
+        background-color: #273a71;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+        color: #fff       
+}
+
+.contact-form input[type="email"] {
+        float: right;
+        width: 48%;
+        padding: 20px;
+        font-size: 160%;
+        background-color: #273a71;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+        color: #fff        
+}
+
+.contact-form input::placeholder,
+textarea::placeholder {
+        color: #fff;
+        opacity: 1;
+}
+
+.contact-form textarea {
+        display: inline-block;
+        width: 100%;
+        background-color: #273a71;
+        margin-top: 30px;
+        padding: 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 160%;
+        color: #fff;
+        resize: none;
+}
+
+.contact-form textarea:focus {
+        outline: none;
+}
+
+.contact-form input.btn {
+        margin-top: 45px;
+        background-color: #30bae7;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-color: #299ec5;
+}
+
+/*==============================================================
+
+        9. FOOTER SECTION CSS
+
+==============================================================*/
+
+footer {
+        background: #344b8e;
+        text-align: center;
+        padding: 45px 0;
+        border-top: 1px solid #ffffff31;
+}
+
+footer h3 {
+        display: inline-block;
+        margin: 0 20px;
+        text-transform: none;
+        transition: .3s;
+}
+
+footer h3:hover a {
+        color: #30bae7!important;
+}
+
+/*==============================================================
+
+        END STYLING CSS
+
+==============================================================*/
+
+/*==============================================================
+
+        START RESPONSIVE MEDIA QUERY
+
+==============================================================*/
+
+@media screen and (max-width: 1200px) {
+        .row {
+                max-width: 100%;
+                padding: 0 30px
+        }
+        .hero-text-box {
+                width: 75%;
+        }
+        .service-items {
+                padding: 0 33px;
+        }
+        .team-items .team-member-description {
+                width: 100%;
+                
+        }
+}
+
+@media screen and (max-width: 1024px) {
+        .main-menu {
+                display: none;
+        }
+
+        .nav-bar {
+                padding-top: 30px;
+        }
+        .nav-bar .hambergar-menu {
+                display: inline-block;
+        }
+
+        nav.uk-sticky-fixed {
+                padding: 10px 0;
+        }
+
+        nav.uk-sticky-fixed .hambergar-menu i {
+                font-size: 250%;
+        }
+
+        .hero-text-box h1 {
+                font-size: 400%;
+        }
+
+        .service-container {
+                grid-gap: 2px;
+        }
+
+        .service-items {
+                padding: 0 13px;
+        }
+
+        .service-items img {
+                margin-bottom: 20px;
+        }
+
+        .team-items img {
+                height: 150px;
+                width: 150px;
+                margin-bottom: 20px;
+        }
+
+        #our-team p.section-description {
+                width: 50%;
+        }
+
+        .social-media-icons ul {
+                margin: 0;
+                padding: 0;
+        }
+
+        #our-team .team-items:nth-child(3) p {
+                margin-bottom: 20px;
+        }
+
+        #portfolio {
+                height: 1034px;
+        }
+
+        .team-items .social-media-icons ul li a i::before {
+                font-size: 180%;
+        }
+
+        .testimonial-container {
+                grid-gap: 50px 25px;
+        }
+
+        .portfolio-items img {
+                height: 250px;
+        }
+
+        #testimonial .section-description {
+                margin-bottom: 80px;
+        }
+
+        .testimonial-items img {
+                margin: 44px 50px 60px 0;
+        }
+}
+
+@media screen and (max-width: 768px) {
+
+        body, html {
+                font-size: 9px;
+        }
+
+        .hero-text-box {
+                width: 90%;
+                top: 50%
+        }
+
+        .service-container {
+                grid-template-columns: 1fr;
+        }
+
+        #service .section-description {
+                margin-bottom: 70px;
+        }
+
+        .service-items {
+                margin-bottom: 40px;
+        }
+
+        .service-items img {
+                height: 120px;
+                margin-bottom: 0;
+        }
+
+        .service-items p {
+                font-weight: 600;
+        }
+
+        #our-team p.section-description {
+                margin-bottom: 70px;
+        }
+
+        .team-container {
+                grid-template-columns: 1fr;
+        }
+
+        .team-items img {
+                margin-bottom: 5px;
+                height: 170px;
+                width: 170px;
+        }
+
+        .team-items .team-member-description {
+                width: 50%;
+                margin-bottom: 20px;
+        }
+
+        .team-items .social-media-icons {
+                margin-bottom: 30px;
+        }
+
+        #skill .section-description {
+                margin-bottom: 50px;
+        }
+
+        .skill-container {
+                grid-template-columns: 1fr;
+        }
+
+        #portfolio {
+                height: auto;
+        }
+
+        #portfolio .section-description {
+                margin-bottom: 70px;
+        }
+
+        .portfolio-btn button {
+                display: none;
+        }
+
+        .portfolio-container {
+                grid-template-columns: 1fr;
+        }
+
+        /* .portfolio-box-1 */
+
+        .portfolio-items img {
+                height: 250px;
+        }
+
+        .portfolio-items span {
+                margin-top: 25px;
+                display: block;
+        }
+
+        .testimonial-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+        }
+
+        .testimonial-items img {
+                float: none;
+                margin: 0;
+                margin-bottom: 20px;
+                height: 150px;
+                width: 150px;
+        }
+
+        .testimonial-items p {
+                width: 80%;
+                margin: 0 auto;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"] {
+                float: none;
+                width: 100%;
+                margin-bottom: 20px;
+        }
+
+        .contact-form textarea {
+                margin-top: 0;
+        }
+
+        footer {
+                font-size: 80%;
+        }
+        footer h3 {
+                margin: 0 10px;
+        }
+}
+

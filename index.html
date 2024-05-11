@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <!-- REQUIRED META TAGS -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- SITE TITLE -->
+        <title>Cuda - An awesome portfolio template</title>
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="resources/img/favicon.png" type="image/x-icon">
+        <!-- GOOGLE FONTS CDN LINK -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="vendors/css/uikit.min.css">
+        <!-- FONT AWESOME ICON CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <!-- ANIMATED PROGRESS BAR -->
+        <link rel="stylesheet" href="vendors/css/progressbar.css">
+        <!-- NORMALIZE DEFAULT CSS FILES -->
+        <link rel="stylesheet" href="vendors/css/normalize.css">
+        <!-- MAIN CSS FILES -->
+        <link rel="stylesheet" href="resources/css/style.css">
+    </head>
+    <body>
+        
+        <!-- START HEADER SECTION -->
+        <header id="header">
+            <nav uk-sticky="start: 200; animation: uk-animation-slide-top">
+                <div class="row">
+                    <div class="nav-bar">
+                        <a href="index.html"><img src="resources/img/logo.png" alt="Cuda" class="logo"></a>
+                        <!-- hambergar menu -->
+                        <div class="hambergar-menu">
+                            <i onclick="openMenu()" class="fa-solid fa-bars"></i>
+                            <div class="hambergar-menu-items" id="mobile-menu">
+                                <i onclick="closeMenu()" class="fa-solid fa-xmark"></i>
+                                <div onclick="closeMenu()" class="hambergar-menu-links">
+                                    <a href="#header">home</a>
+                                    <a href="#service">service</a>
+                                    <a href="#our-team">team</a>
+                                    <a href="#skill">skill</a>
+                                    <a href="#portfolio">portfolio</a>
+                                    <a href="#testimonial">testimonial</a>
+                                    <a href="#contact">contact</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-menu">
+                            <ul>
+                                <li class="active"><a href="#header">home</a></li>
+                                <li><a href="#service">service</a></li>
+                                <li><a href="#our-team">team</a></li>
+                                <li><a href="#skill">skill</a></li>
+                                <li><a href="#portfolio">portfolio</a></li>
+                                <li><a href="#testimonial">testimonial</a></li>
+                                <li><a href="#contact">contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="hero-text-box">
+                    <h1 class="uk-animation-slide-bottom-small">Hi there! We are the new kids on the block <br> and we build awesome websites and mobile apps.</h1>
+                    <a href="#" class="btn hero-btn uk-animation-slide-bottom-small">work with us!</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- END HEADER SECTION -->
+
+        <!-- START SERVICE SECTION -->
+
+        <section id="service">
+            <div class="row">
+                <h2 class="section-title" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">services we provide</h2>
+                <p class="section-description" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">We are working with both individuals and businesses from all over the globe to create awesome websites and applications.</p>
+                <div class="service-container" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true">
+                    <div class="service-items">
+                        <img src="resources/img/flag.png" alt="Flag">
+                        <h3>branding</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                    </div>
+                    <div class="service-items">
+                        <img src="resources/img/pencil.png" alt="Pencil">
+                        <h3>design</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                    </div>
+                    <div class="service-items">
+                        <img src="resources/img/gear.png" alt="Gear">
+                        <h3>development</h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
+                    </div>
+                    <div class="service-items">
+                        <img src="resources/img/rocket.png" alt="Rocket">
+                        <h3>rocket scrience</h3>
+                        <p>Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END SERVICE SECTION -->
+
+        <!-- START OUR TEAM SECTION -->
+
+        <section id="our-team">
+            <div class="row">
+                <h2 class="section-title" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">MEET OUR BEAUTIFUL TEAM</h2>
+                <p class="section-description" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">We are a small team of designers and developers, who help brands with big ideas.</p>
+                <div class="team-container" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true">
+                    <div class="team-items">
+                        <img src="resources/img/1.jpg" alt="Anne Hathaway">
+                        <h3>anne Hathaway</h3>
+                        <span class="team-member-designation">ceo / marketing guru</span>
+                        <p class="team-member-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+                        <div class="social-media-icons">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="team-items">
+                        <img src="resources/img/2.jpg" alt="Kate Upton">
+                        <h3>Kate Upton</h3>
+                        <span class="team-member-designation">Creative Director</span>
+                        <p class="team-member-description">Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
+                        <div class="social-media-icons">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="team-items">
+                        <img src="resources/img/3.jpg" alt="Olivia Wilde">
+                        <h3>Olivia Wilde</h3>
+                        <span class="team-member-designation">Lead Designer</span>
+                        <p class="team-member-description">Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.</p>
+                        <div class="social-media-icons">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="team-items">
+                        <img src="resources/img/4.jpg" alt="Ashley Greene">
+                        <h3>Ashley Greene</h3>
+                        <span class="team-member-designation">SEO / Developer</span>
+                        <p class="team-member-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        <div class="social-media-icons">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END OUR TEAM SECTION -->
+
+        <!-- START SKILL SECTION -->
+
+        <section id="skill">
+            <div class="row">
+                <h2 class="section-title" uk-scrollspy="cls: uk-animation-fade; repeat: true">WE GOT SKILLS!</h2>
+                <p class="section-description" uk-scrollspy="cls: uk-animation-fade; repeat: true">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="skill-container">
+                    <div class="skill-items">
+                        <svg class="radial-progress web-design" data-percentage="90" viewBox="0 0 80 80">
+                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+                          </svg>
+                        <h3>web design</h3>
+                    </div>
+                    <div class="skill-items">
+                        <svg class="radial-progress html-css" data-percentage="75" viewBox="0 0 80 80">
+                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">75%</text>
+                          </svg>
+                        <h3>html / css</h3>
+                    </div>
+                    <div class="skill-items">
+                        <svg class="radial-progress graphic-design" data-percentage="70" viewBox="0 0 80 80">
+                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">70%</text>
+                          </svg>
+                        <h3>graphic design</h3>
+                    </div>
+                    <div class="skill-items">
+                        <svg class="radial-progress ui-ux" data-percentage="85" viewBox="0 0 80 80">
+                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">85%</text>
+                          </svg>
+                        <h3>ui / ux</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END SKILL SECTION -->
+
+        <!-- START PORTFOLIO SECTION -->
+        <section id="portfolio">
+            <div class="row">
+                <h2 class="section-title">our portfolio</h2>
+                <p class="section-description">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam</p>
+                <div class="portfolio-btn" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true">
+                    <button data-filter="all" type="button">all</button>
+                    <button data-filter=".web" type="button">web</button>
+                    <button data-filter=".apps" type="button">apps</button>
+                    <button data-filter=".icons" type="button">icons</button>
+                </div>
+                <div class="portfolio-container">
+                    <div class="portfolio-items" uk-scrollspy="cls: uk-animation-slide-left; delay: 300; repeat: true">
+                        <div class="portfolio-box-1 mix web apps">
+                            <img src="resources/img/Portfolio-1.png" alt="Portfolio-1">
+                            <span>Isometric Perspective Mock-Up</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" uk-scrollspy="cls: uk-animation-slide-right; delay: 300; repeat: true">
+                        <div class="portfolio-box-2 mix web icons">
+                            <img src="resources/img/Portfolio-2.png" alt="Portfolio-2">
+                            <span>time zone app ui</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" uk-scrollspy="cls: uk-animation-slide-left; delay: 300; repeat: true">
+                        <div class="portfolio-box-3 mix">
+                            <img src="resources/img/Portfolio-3.png" alt="Portfolio-3">
+                            <span>viro media players ui</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" uk-scrollspy="cls: uk-animation-slide-right; delay: 300; repeat: true">
+                        <div class="portfolio-box-4 mix apps">
+                            <img src="resources/img/Portfolio-4.png" alt="Portfolio-4">
+                            <span>blog / magazine flat ui kit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END PORTFOLIO SECTION -->
+
+        <!-- START TESTIMONIAL SECTION -->
+
+        <section id="testimonial">
+            <div class="row">
+                <h2 class="section-title" uk-scrollspy="cls: uk-animation-slide-left; delay: 300; repeat: true">what people say about us</h2>
+                <p class="section-description" uk-scrollspy="cls: uk-animation-slide-right; delay: 300; repeat: true">Our clients love us!</p>
+                <div class="testimonial-container">
+                    <div class="testimonial-items">
+                        <img src="resources/img/1.jpg" alt="testimonial-1" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true">
+                        <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true">“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+                        <h3 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true">chanel iman</h3>
+                        <span uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true">CEO of Pinterest</span>
+                    </div>
+                    <div class="testimonial-items">
+                        <img src="resources/img/2.jpg" alt="testimonial-2" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true">
+                        <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true">“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+                        <h3 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true">adriana lima</h3>
+                        <span uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true">Founder of Instagram</span>
+                    </div>
+                    <div class="testimonial-items">
+                        <img src="resources/img/3.jpg" alt="testimonial-3" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true">
+                        <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true">“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+                        <h3 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true">anne hathaway</h3>
+                        <span uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true">Lead Designer at Behance</span>
+                    </div>
+                    <div class="testimonial-items">
+                        <img src="resources/img/4.jpg" alt="testimonial-4" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true">
+                        <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true">“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+                        <h3 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true">emma stone</h3>
+                        <span uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true">Co-Founder of Shazam</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END TESTIMONIAL SECTION -->
+
+        <!-- START CONTACT SECTION -->
+
+        <section id="contact">
+            <div class="row">
+                <h2 class="section-title">get in touch</h2>
+                <p class="section-description">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <input type="text" name="name" placeholder="Your name *" required uk-scrollspy="cls: uk-animation-slide-left; delay: 300; repeat: true">
+                        <input type="email" name="email" placeholder="Email address *" required uk-scrollspy="cls: uk-animation-slide-right; delay: 300; repeat: true">
+                        <textarea name="message" cols="30" rows="10" placeholder="Your Message *" required uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true"></textarea>
+                        <input type="submit" value="send message" class="btn" uk-scrollspy="cls: uk-animation-fade; delay: 700; repeat: true">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- END CONTACT SECTION -->
+
+        <!-- START FOOTER SECTION -->
+
+        <footer id="footer">
+            <div class="row">
+                <div class="footer-social-link">
+                    <h3><a href="#">Facebook</a></h3>
+                    <h3><a href="#">Twitter</a></h3>
+                    <h3><a href="#">Google+</a></h3>
+                    <h3><a href="#">LinkedIn</a></h3>
+                    <h3><a href="#">Behance</a></h3>
+                    <h3><a href="#">Dribble</a></h3>
+                    <h3><a href="#">GitHub</a></h3>
+                </div>
+            </div>
+        </footer>
+
+        <!-- END FOOTER SECTION -->
+
+        <!-- JAVASCRIPT FILES -->
+        <!-- JQUERY CDN LINK -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- UIkit JS -->
+        <script src="vendors/js/uikit/uikit.min.js"></script>
+        <script src="vendors/js/uikit/uikit-icons.min.js"></script>
+        <!-- ONE PAGE NAV -->
+        <script src="vendors/js/jquery.nav.js"></script>
+        <!-- ANIMATED PROGRESSBAR -->
+        <script src="vendors/js/progressbar.js"></script>
+        <!-- MIXITUP PLUGINS -->
+        <script src="vendors/js/mixitup.min.js"></script>
+
+        <!-- CUSTOM JS FILE -->
+        <script src="resources/js/main.js"></script>
+    </body>
+</html>
